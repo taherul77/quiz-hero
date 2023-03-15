@@ -13,6 +13,15 @@ let quizContainer = document.querySelector("#quizContainer");
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
 
+
+// All quiz data fetched from json
+const loadQuiz = async () => {
+  const res = await fetch("./data/quiz.json");
+  const data = await res.json();
+  quizData = data;
+  displayQuiz(data);
+  console.log(data);
+};
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
   let countDown = document.querySelector("#countDownContainer");
@@ -43,13 +52,7 @@ startQuiz.addEventListener("click", () => {
   }, 1000);
 });
 
-// All quiz data fetched from json
-const loadQuiz = async () => {
-  const res = await fetch("./data/quiz.json");
-  const data = await res.json;
-  quizData = data;
-  displayQuiz(data);
-};
+
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
@@ -74,7 +77,7 @@ const displayQuiz = (data) => {
 };
 
 // EventListener for quiz submit button
-document.querySelector("#submit").addEventlistener("click", () => {
+document.querySelector("#submit").addEventListener("click", () => {
   if (answers.length < 6) {
     return;
   }
@@ -109,6 +112,7 @@ document.querySelector("#submit").addEventlistener("click", () => {
 
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("result"));
+ 
   if (storage) {
     localStorage.setItem(
       "results",
