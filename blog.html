@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
@@ -43,7 +43,7 @@
                     class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl"
                     data-accordion-target="#accordion-color-body-1" aria-expanded="true"
                     aria-controls="accordion-color-body-1">
-                    <span>?</span>
+                    <span>What is the deference between map , filter , forEach & find ?</span>
                     <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
@@ -55,13 +55,113 @@
             <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
                 <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
                     <p class="mb-2 text-gray-500 dark:text-gray-400">
+                        <li><b>forEach():</b>
+                            <br>
+                            <span> .forEach(),is used to run the same code on all of the array's elements, however it
+                                has no effect on the array itself and returns undefined.forEach() method does not return
+                                a new array and used to loop through the elements of an array.
+                                <br>
+                                For example, saving all elements in the database.</span>
+                        </li>
+
+                        <li>
+
+                            <b> map():</b>
+                            <br>
+                            <span>.map() produces a new array with the changed items after running the same code on each
+                                element of the array.map() Functionality performs given "transformation" on a "copy" of
+                                each
+                                element.Obtaining array containing output of some processing done on each element of the
+                                array.
+                                <br>
+                                For example, obtaining array of lengths of each string in the array.</span>
+
+                        </li>
+                        <li>
+                            <b>filter():</b><br>
+                            <span>.filter() examines each element in an array to verify if it satisfies a given
+                                criterion before returning a new array that only contains the items that do.In filter()
+                                , whole array is iterated despite the fact that the element being searched for is
+                                present at the beginning.</span>
+                        </li>
+                        <li>
+                            <b>find():</b><br>
+                            <span>This method returns first element of the array that satisfies the condition specified
+                                in the callback function,.find() is used When we want to select a single element from an
+                                array.Function .find() is also a search function like the previous but they differ in
+                                one small detail — this function returns only one match in an array. If in an array is
+                                more than one result, the function will return the first that has matched.</span>
+                        </li>
+
+
+
+                        
+                    </p>
+                </div>
+            </div>
+            <h2 id="accordion-color-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl"
+                    data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                    aria-controls="accordion-color-body-2">
+                    <span>What is the deference between Local Storage , Section Storage & cookies ?</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">
                         ////
                     </p>
                 </div>
             </div>
-
-
-
+            <h2 id="accordion-color-heading-3">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl"
+                    data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                    aria-controls="accordion-color-body-3">
+                    <span> How to work Event Loop ?</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                        ////
+                    </p>
+                </div>
+            </div>
+            <h2 id="accordion-color-heading-4">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl"
+                    data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                    aria-controls="accordion-color-body-4">
+                    <span>How to work quizTimer & chooseQuiz function in onChange.js file ?</span>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">
+                        /////
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
