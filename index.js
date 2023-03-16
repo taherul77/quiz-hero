@@ -20,7 +20,6 @@ const loadQuiz = async () => {
   const data = await res.json();
   quizData = data;
   displayQuiz(data);
-  console.log(data);
 };
 // EventListener for quiz start button
 startQuiz.addEventListener("click", () => {
